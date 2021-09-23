@@ -232,3 +232,13 @@ moon.addEventListener("click", function () {
     container2.children[i].classList.toggle("container-dark");
   }
 });
+
+document
+  .getElementById("createNewList")
+  .addEventListener("keyup", function (event) {
+    console.log(event);
+    if (event.keyCode === 13) {
+      event.preventDefault();
+      fun();
+    }
+  });
