@@ -1,0 +1,66 @@
+@import "globals";
+@import "mixins";
+@import "variables";
+@import "media-queries";
+
+.background {
+  background: url(../images/bg-desktop-light.jpg);
+  background-size: cover;
+  height: 18em;
+  &.background-dark {
+    background: url(../images/bg-desktop-dark.jpg);
+    background-size: cover;
+    height: 18em;
+  }
+}
+
+.main-container {
+  max-width: 33.625em;
+  margin: -13em auto;
+  & > .container {
+    margin-bottom: 1.5em;
+  }
+}
+.container {
+  width: 100%;
+  height: 4.125em;
+  border-radius: 6px;
+  background: $Very-Light-Gray;
+
+  &.container-dark {
+    background: $Very-Dark-Desaturated-Blue;
+    color: $Light-Grayish-Blue;
+  }
+}
+.inpu {
+  border: none;
+  background: initial;
+  &.inpu-dark {
+    color: $Light-Grayish-Blue;
+  }
+
+  &:focus {
+    box-shadow: initial;
+    background: initial;
+  }
+}
+
+.bot {
+  border-radius: 9px;
+  box-shadow: 0 1em 33px 1px #8080808a;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 100vh;
+
+  .bottom1 {
+    height: 3.125;
+    border-radius: 5em;
+  }
+  .bottom2 {
+    background: $Very-Light-Gray;
+    &.bottom2-dark {
+      background: $Very-Dark-Desaturated-Blue;
+      color: $Light-Grayish-Blue;
+    }
+  }
+}

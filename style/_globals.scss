@@ -1,0 +1,87 @@
+@import "variables";
+@import "mixins";
+@import "media-queries";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@include media-query;
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: $Very-Light-Gray;
+  &.body-dark {
+    background-color: $Very-Dark-Blue;
+  }
+  @include media-query;
+}
+.btnn {
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 1.6875em;
+
+  border: double 1px transparent;
+  border-radius: 60px;
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, #f00, #3020ff);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+
+  background-color: white;
+}
+.btnn-style {
+  @include grd();
+}
+
+.completed {
+  text-decoration: line-through;
+  color: $completedTask;
+}
+
+.tasks {
+  border-bottom: solid $completedTask 1px !important;
+  border-top: initial !important;
+  border-right: initial !important;
+  border-left: initial !important;
+  border-radius: initial !important;
+}
+
+///////////////////
+
+.filter {
+  span {
+    cursor: pointer;
+  }
+  span:not(:last-child) {
+    margin-right: 1em;
+  }
+  &.filter-dark {
+    background: $Very-Dark-Desaturated-Blue;
+  }
+}
+
+.drag {
+  margin: 4em auto;
+}
+
+h1 {
+  color: white;
+  font-weight: 700;
+}
+
+.mode {
+  width: 12px;
+  height: 12px;
+  background-image: url(../images/icon-moon.svg);
+}
+
+.title {
+  margin-bottom: 3em;
+}
+
+#clearitems,
+#todark {
+  cursor: pointer;
+}

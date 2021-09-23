@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 541px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  .background {
+    background-image: url(../images/bg-mobile-light.jpg);
+    background-size: cover;
+    height: 18em;
+  }
+  .background.background-dark {
+    background-image: url(../images/bg-mobile-dark.jpg);
+  }
+
+  .main-container {
+    max-width: 90%;
+    position: relative;
+  }
+  .main-container .container {
+    height: 2.5em;
+  }
+  .main-container > .container {
+    margin-bottom: 1.5em;
+  }
+
+  .bot .filter {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 4em;
+    margin-bottom: 3em;
+    height: 3.0625em;
+    display: flex;
+    justify-content: center;
+    /* align-content: stretch; */
+    align-items: center;
+    background: #fafafa;
+    border-radius: 6px;
+    box-shadow: 0px 10px 23px 0px #0000004d;
+  }
+  .bot .filter.filter-dark {
+    background: #25273c;
+  }
+
+  .drag {
+    margin: 8em auto;
+  }
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #fafafa;
+}
+body.body-dark {
+  background-color: #161722;
+}
+@media (max-width: 541px) {
+  body body {
+    font-size: 0.9rem;
+  }
+  body .background {
+    background-image: url(../images/bg-mobile-light.jpg);
+    background-size: cover;
+    height: 18em;
+  }
+  body .background.background-dark {
+    background-image: url(../images/bg-mobile-dark.jpg);
+  }
+  body .main-container {
+    max-width: 90%;
+    position: relative;
+  }
+  body .main-container .container {
+    height: 2.5em;
+  }
+  body .main-container > .container {
+    margin-bottom: 1.5em;
+  }
+  body .bot .filter {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 4em;
+    margin-bottom: 3em;
+    height: 3.0625em;
+    display: flex;
+    justify-content: center;
+    /* align-content: stretch; */
+    align-items: center;
+    background: #fafafa;
+    border-radius: 6px;
+    box-shadow: 0px 10px 23px 0px #0000004d;
+  }
+  body .bot .filter.filter-dark {
+    background: #25273c;
+  }
+  body .drag {
+    margin: 8em auto;
+  }
+}
+
+.btnn {
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 1.6875em;
+  border: double 1px transparent;
+  border-radius: 60px;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00, #3020ff);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-color: white;
+}
+
+.btnn-style {
+  background: linear-gradient(to right, #57ddff, #c058f3);
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #9394a5;
+}
+
+.tasks {
+  border-bottom: solid #9394a5 1px !important;
+  border-top: initial !important;
+  border-right: initial !important;
+  border-left: initial !important;
+  border-radius: initial !important;
+}
+
+.filter span {
+  cursor: pointer;
+}
+.filter span:not(:last-child) {
+  margin-right: 1em;
+}
+.filter.filter-dark {
+  background: #25273c;
+}
+
+.drag {
+  margin: 4em auto;
+}
+
+h1 {
+  color: white;
+  font-weight: 700;
+}
+
+.mode {
+  width: 12px;
+  height: 12px;
+  background-image: url(../images/icon-moon.svg);
+}
+
+.title {
+  margin-bottom: 3em;
+}
+
+#clearitems,
+#todark {
+  cursor: pointer;
+}
+
+.background {
+  background: url(../images/bg-desktop-light.jpg);
+  background-size: cover;
+  height: 18em;
+}
+.background.background-dark {
+  background: url(../images/bg-desktop-dark.jpg);
+  background-size: cover;
+  height: 18em;
+}
+
+.main-container {
+  max-width: 33.625em;
+  margin: -13em auto;
+}
+.main-container > .container {
+  margin-bottom: 1.5em;
+}
+
+.container {
+  width: 100%;
+  height: 4.125em;
+  border-radius: 6px;
+  background: #fafafa;
+}
+.container.container-dark {
+  background: #25273c;
+  color: #cacde8;
+}
+
+.inpu {
+  border: none;
+  background: initial;
+}
+.inpu.inpu-dark {
+  color: #cacde8;
+}
+.inpu:focus {
+  box-shadow: initial;
+  background: initial;
+}
+
+.bot {
+  border-radius: 9px;
+  box-shadow: 0 1em 33px 1px #8080808a;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 100vh;
+}
+.bot .bottom1 {
+  height: 3.125;
+  border-radius: 5em;
+}
+.bot .bottom2 {
+  background: #fafafa;
+}
+.bot .bottom2.bottom2-dark {
+  background: #25273c;
+  color: #cacde8;
+}/*# sourceMappingURL=style.css.map */

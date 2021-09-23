@@ -1,0 +1,6 @@
+@mixin grd($dir: to right) {
+  background: linear-gradient($dir, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+@mixin bor() {
+  border: solid red 1px;
+}
