@@ -23,7 +23,7 @@ body {
   margin-right: 1.6875em;
 
   border: double 1px transparent;
-  border-radius: 60px;
+  border-radius: 50%;
   background-image: linear-gradient(white, white),
     radial-gradient(circle at top left, #f00, #3020ff);
   background-origin: border-box;
@@ -32,7 +32,19 @@ body {
   background-color: white;
 }
 .btnn-style {
-  @include grd();
+  @include grd(30deg);
+  position: relative;
+  // overflow: hidden;
+  // border: red 2px solid;
+
+  &::after {
+    content: url(../images/icon-check.svg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
 }
 
 .completed {

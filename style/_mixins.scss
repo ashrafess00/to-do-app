@@ -1,5 +1,8 @@
 @mixin grd($dir: to right) {
-  background: linear-gradient($dir, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  background: linear-gradient($dir, hsl(192, 100%, 67%), hsl(280, 87%, 65%)) 1%;
+  // background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
 }
 @mixin bor() {
   border: solid red 1px;
