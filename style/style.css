@@ -153,6 +153,7 @@ body.body-dark {
 h1 {
   color: white;
   font-weight: 700;
+  margin-bottom: initial;
 }
 
 .mode {
@@ -168,6 +169,11 @@ h1 {
 #clearitems,
 #todark {
   cursor: pointer;
+}
+
+#todark {
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .background {
